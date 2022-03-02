@@ -36,8 +36,10 @@ public class Main {
             System.out.println("[No previous data, please enter new data]");
 
         do{
-            System.out.println("Enter task name: ");
+            System.out.println("Enter task name (\"quit\" to quit): ");
             name = keyboard.nextLine();
+            if (name.equalsIgnoreCase("quit"))
+                break;
             System.out.println("Enter due date (dd/mm/yyyy): ");
             dueDate = keyboard.nextLine();
             System.out.println("Enter due time: ");
